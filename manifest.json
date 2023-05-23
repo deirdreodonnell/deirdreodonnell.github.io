@@ -1,0 +1,13 @@
+{"name": "Rapid Response Time",
+"short_name": "RRT",
+"start_url": "/",
+"background_color": "#6dcdb1",
+"theme_color": "#009578",
+"display": "standalone",
+"icons":[
+    {"src": "images/logo2.png",
+    "sizes": "454x454",
+    "type": "image/png"
+}
+]
+}

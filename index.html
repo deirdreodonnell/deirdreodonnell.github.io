@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#009578">
+    <title>Document</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="images/logo2.png">
+    <link  rel="style sheet" href="style.css">
+</head>
+<body>
+  <h1> Rapid Response Time </h1>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Drop-down Menu</title>
+  <style>
+    .content {
+      display: none;
+    }
+  </style>
+  <script>
+    function showContent() {
+      var selectedValue = document.getElementById("headerSelect").value;
+      var contentElements = document.getElementsByClassName("content");
+      for (var i = 0; i < contentElements.length; i++) {
+        contentElements[i].style.display = "none";
+      }
+      document.getElementById(selectedValue).style.display = "block";
+    }
+  </script>
+</head>
+<body>
+  <h1></h1>
+  <label for="headerSelect">RR:</label>
+  <select id="headerSelect" onchange="showContent()">
+    <option value="">Select...</option>
+    <option value="header1">Codes</option>
+    <option value="header2">Obtain Data</option>
+    <option value="header3">Non-Senior Tasks</option>
+    <option value="header4">Hs and Ts</option>
+    <option value="header5">ABCs</option>
+    <option value="header6">Tachycardia</option>
+    <option value="header7">Hypertensive Urgency </option>
+    <option value="header8">Bradycardia</option>
+    <option value="header9">Hypotension</option>
+    <option value="header10">DVT/PE</option>
+    <option value="header11">GI Bleed</option>
+    <option value="header12">Acute Coronary syndrome</option>
+    <option value="header13">Acute Hypoxemia</option>
+    <option value="header14">AMS</option>
+    <option value="header15">Seizures</option>
+    <option value="header16">Anaphylaxis</option>
+  </select>
+
+  <div id="install-prompt" style="display: none;">
+    <button id="install-button">Install</button>
+  </div>
+
+  <div id="header1" class="content">
+    <h2>Codes</h2>
+    <p>A - Access</p>
+    <p>B - Backboard Status </p>
+    <p>C - Code Status </p>
+    <p>D - Defib</p>
+    <p>D - Drips</p>
+    <p>E - Epi</p>
+    <p>E - Electricity (150-200J; tele)</p>
+    <p>F - Fluids</p>
+    <p>F - Family</p>
+    <p>G - Glucose</p>
+  </div>
+
+  <div id="header2" class="content">
+    <h2>Obtain Data</h2>
+    <p>[] Preceding events</p>
+    <p>[] Code Status</p>
+    <p>[] Vascular Access </p>
+    <p>[] Vitals</p>
+    <p>[] POCT glucose </p>
+    <p>[] CBC & CMP </p>
+    <p>[] VBG +Lactate </p>
+    <p>[]EKG + Troponin </p>
+    <p>[]CXR /other mig </p>
+    <p>[] Check MAR</p>
+  </div>
+
+  <div id="header3" class="content">
+    <h2>Non-Senior Tasks</h2>
+    <p>- Confirm Code Status</p>
+    <p>- Confirm Access</p>
+    <p>- Check IVs running</p>
+    <p>- Access EMR</p>
+    <p>- Print tele strips</p>
+    <p>- Notify attending/family</p>
+  </div>
+
+  <div id="header4" class="content">
+    <h2>Hs and Ts</h2>
+    <p> <font color = red> <b>Hypoxemia</b> → Intubate/ECMO</font></p>
+    <p><b>Hypovolemia</b> → IF, blood</p>
+    <p><b>H+(acidemia)</b> → bicarb</p>
+    <p><b>Hyperkalemia</b> → D5+insulin, Ca gluconate/Ca chloride</p>
+    <p><b>Hypothermia</b> → warming</p>
+    <p><b>Tamponade</b> → pericardiocentesis</p>
+    <p><b>Tension PTX</b> → needle decompress</p>
+    <p><b>Thrombosis/MI</b> → PCI, Cards</p>
+    <p><b>Thrombosis/PE</b> → Hep Drip/IR</p>
+    <p><b>Toxin/Drugs</b> → reversal agents</p>
+  </div>
+
+  <div id="header5" class="content">
+    <h2>ABCs</h2>
+    <p>1. <b>Airway:</b> if unconscious or poor mentation → intubate</p>
+    <p>2. <b>Breathing:</b> check for chest rise, ascultate for breath sounds; if absent → check pulse →
+      present pulse → get CXR absent pulse → start CPR</p>
+    <p>3. <b>Circulation:</b> Check distal pulse in all extremities, BP, HR, ascultate. If no pulse → activate code blue + CPR</p>
+  </div>
+
+  <div id="header6" class="content">
+    <h2>Tachycardia</h2>
+    <p>Narrow: AVRT/AV/NRT, AF/AFlutter, AT, MAT</p>
+    <p>Wide: MMVT, PMVT, SVT w/ aberrancy, pacemaker</p>
+    <p><b>Synchronized Cardioversion:</b></p>
+    <p>- Narrow/regular: 50-100J</p>
+    <p>- Narrow/irregular: 120-200J</p>
+    <p>- Wide/regular: 100J</p>
+    <p>- Wide/irregular: 150-200J</p>
+    <p><b>Medications:</b></p>
+    <p><u>Narrow/reg</u>:adenosine (6, 12, 12)</p>
+    <p><u>Wide/reg:</u></p>
+    <p>- Amio: 150mg → 1mg/min</p>
+    <p>- Lido: 100mg → 50mg q5 x3 → 1-2mg/min</p>
+    <p>- Procainamide: 20-50mg/min until hypoTN or QRS ↑ 50% → 1-4 mg/min</p>
+    <P>- consider adenosine unless WPW</P>
+    <P><u>Wide/irreg:</u></P>
+    <p><b>- PMVT:</b> amio, lido; tx ischemia</p>
+    <p><b>- Torsades:</b> Mg 2mg, ↑ HR Isoprot.</p>
+    <p><b>- AF+WPW:</b>procainamide, ibutilide (1mg)</p>
+    <p>(🚫 adenosine, BB/CCB, dig)</p>
+  </div>
+
+  <div id="header7" class="content">
+    <h2>Hypertensive Urgency</h2>
+    <p>Labetalol - IV - 10-80mg q10min → PO </p>
+    <p>Hydralazine - IV - 5-20mg q15-30min → PO </p>
+    <p>EKG + troponin, U/A, VBG +Lactate</p>
+    <p>Focused optho, auditory, cardiopulmonary exam</p>
+  </div>
+
+  <div id="header8" class="content">
+    <h2>Bradycardia</h2>
+    <p><u>Conduction disease, R sided MI, vagal, Rx effect, ↑ ICP, hypothyroidism, hypoxemia</u></p>
+      <p> Atropine 0.5-1mg q3-5m, max 3mg</p>
+      <p>Dopamine 2-20 mcg/kg/min</p>
+      <p>Epinephrine 2-10mcg/min</p>
+      <p>Isoproterenol 2-10mcg/min</p>
+      <p><b>Transcutaneous pacing</b></p>
+        <p>midaz/fentanyl or ativan/dilaudid 
+        <p>Transvenous pacing (cards consult)</p>
+  </div>
+
+  <div id="header9" class="content">
+    <h2>Hypotension</h2>
+    <p><b>Cardiogenic:</b> MI, ADHF, BB/CBB tox, acute myocarditis, valvular disease (AS)</p>
+    <p><b>Distributive:</b> sepsis, anaphylaxis, toxin, <font color = red>liver dx</font> adrenal stuff, <font color = red>sleeping, spinal shock </font></p> 
+    <p><b>Hypovolemic:</b> bleeding, diuresis, HD, GI losses </p>
+    <p><b>Obstructive:</b> PE, tamponade</p>
+  </div>
+
+  <div id="header10" class="content">
+    <h2>DVT/PE</h2>
+    <p><b>Stable:</b> Hep gtt+ consult IR</p> 
+    <p><b>Unstable:</b> Call PERT: 520-XXX-XXXX, Call MICU, Hep gtt, EKG, trop, TTE, PT/INR, proBNP, call pharm for tPA</p>
+  </div>
+
+  <div id="header11" class="content">
+    <h2>GI Bleed</h2>
+    <p> 2 large bore IV, Type/Screen, Consent, pRBC, IV PPI 40mg, Octreotide 50mcg, CXR if portal HTN </p>
+    <p>GI on call: 520-xxx-xxx BlodBank 520-xxx-xxxx</p>
+  </div>
+
+  <div id="header12" class="content">
+    <h2>Acute Coronary syndrome</h2>
+    <p> ASA 325(load), statin, NTG, heparin gtt, BB, EKG, trend trop. Cards 520-xxx-xxxx for refractory CP, HD unstable, or arrhythmia</p>
+  </div>
+
+  <div id="header13" class="content">
+    <h2>Acute Hypoxemia</h2>
+    <p>Aspiration → Suction/ </p>
+    <p>Mucus plug → RT </p>
+    <p>Pneumonia → ABX </p>
+    <p>Pulm edema → Diuresis </p>
+    <p>PE → Heparin Drip </p>
+    <p>Pneumothorax → Needle Decompress </p>
+    <p>Pleural effusion → Diuresis </p>
+  </div>
+
+  <div id="header14" class="content">
+    <h2>AMS</h2>
+    <p>NS: CVA, ICH, sz, infxn, PRES</p>
+    <p>Metabolic toxins: NH3, CO2, BUN, Na, glucose </p>
+    <p>Exogenous toxins: meds, drugs, w/d</p>
+    <p>Vitals: HTN/HoTN, hypoglycemia, hypoxemia</p>
+    <p>Misc: TTP, AI, hypothyroid</p>
+  </div>
+
+  <div id="header15" class="content">
+    <h2>Seizures</h2>
+    <p>Lorazepam 2-4mg IV/I0x2</p>
+    <p>diazepam 20mg PR</p>
+    <p>levetiracetam 20mg/kg </p>
+    <p>Neuro On-Call: 520-xxx-xxxx</p>
+  </div>
+
+  <div id="header16" class="content">
+    <h2>Anaphylaxis</h2>
+    <p>Epi 0.3-0.5 IM (1:1000; 1mg/mL)</p>
+    <p>Epi 0.1-0.3mg IV (1:10,000; 0.1mg/mL)</p>
+    <p> → repeat q5-15min; start gtt if>3 required</p>
+    <p> Other agents: Benadryl 50mg, methylpred 125mg,albuterol neb, IVF </p>
+  </div>
+  <script src="/src/script.js"></script>
+  </body>
