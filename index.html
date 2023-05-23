@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#009578">
     <title>Document</title>
+    <link rel="canonical" href="https://codepo8.github.io/github-page-pwa/" />
+  <link rel="manifest" href="/github-page-pwa/manifest.webmanifest">
     <link rel="manifest" href="manifest.json">
     <link rel="apple-touch-icon" href="images/logo2.png">
     <link  rel="style sheet" href="style.css">
@@ -225,4 +227,13 @@
     <p> Other agents: Benadryl 50mg, methylpred 125mg,albuterol neb, IVF </p>
   </div>
   <script src="/src/script.js"></script>
+  <script>
+      if (navigator.serviceWorker) {
+        navigator.serviceWorker.register (
+          '/github-page-pwa/sw.js',
+          {scope: '/github-page-pwa/'}
+        )
+      }
+  </script>
+</body>
   </body>
